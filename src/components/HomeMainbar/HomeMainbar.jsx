@@ -32,7 +32,10 @@ const HomeMainbar = () => {
             <div>
                 {
                     questionsList.data === null ?
-                    <h1>Loading...</h1> :
+                    <div>
+                    <h1>Loading...</h1>
+                    <p>Please wait for 50 sec, as I deployed server it in Free Tier.</p> 
+                    </div>:
                     <>
                         <p>{ questionsList.data.length } questions</p>
                         <QuestionList questionsList={questionsList.data} />
